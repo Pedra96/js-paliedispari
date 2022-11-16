@@ -57,15 +57,14 @@ randomNumberPc();
 function randomNumberPc() {
     let min = 1;
     let max = 5;
-    let numberPc = Math.floor(Math.random() * (max - min) + min);
+    let numberPc = Math.floor(Math.random() * (max - min+1) + min);
     whoWon(numeroUser, numberPc, userGamble);
 
 }
 
 //funzione di controllo per vedere chi vince il giochino del pari o dispari
 function whoWon(user, computer, gamble) {
-    user = parseInt(user);
-    console.log(user + " " + computer)
+    console.log("il tuo numero: "+user + " " +"il numero del computer: "+ computer)
     somma = user + computer;
     if (somma % 2 == 0 && gamble == "pari" || somma % 2 != 0 && gamble == "dispari") {
         console.log("Hai vinto");
