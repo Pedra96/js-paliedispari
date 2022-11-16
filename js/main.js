@@ -21,7 +21,11 @@ function isPalindromo(string) {
         console.log(stringJoin)
         stringSplit.pop();
     }
-    console.log(stringJoin == string);
+    if(stringJoin==string){
+        console.log(stringJoin +" e "+ string + " sono un palindromo ");
+    }else{
+        console.log(string +" e " + stringJoin + " non sono un palindromo ");
+    }
 }
 
 
