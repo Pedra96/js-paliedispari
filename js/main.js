@@ -49,22 +49,24 @@ do {
 
 randomNumberPc();
 
+//funzione per generare numero randomico per il computer
 function randomNumberPc() {
     let min = 1;
     let max = 5;
     let numberPc = Math.floor(Math.random() * (max - min) + min);
-    whoWon(numeroUser, numberPc,userGamble);
+    whoWon(numeroUser, numberPc, userGamble);
 
 }
 
-function whoWon(user, computer,gamble) {
-    user=parseInt(user);
-    console.log(user+" "+computer)
+//funzione di controllo per vedere chi vince il giochino del pari o dispari
+function whoWon(user, computer, gamble) {
+    user = parseInt(user);
+    console.log(user + " " + computer)
     somma = user + computer;
-    if(somma%2==0 && gamble=="pari"||somma%2!=0 && gamble == "dispari"){
+    if (somma % 2 == 0 && gamble == "pari" || somma % 2 != 0 && gamble == "dispari") {
         console.log("Hai vinto");
     }
-    else{
+    else {
         console.log("Ha vinto il computer");
     }
 }
