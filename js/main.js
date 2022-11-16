@@ -11,7 +11,7 @@ let parolaUser = prompt("dammi una parola per vedere se è palindroma");
 //chiama la funzione dopo aver inserito il promp
 isPalindromo(parolaUser);
 
-//funzione per il controllo se la stringa è palindroma
+//funzione per il controllo se la stringa è palindroma. "Molto meglio questo del palindrometor 10/10 stackoverflow".
 function isPalindromo(string) {
     string = string.toLowerCase();
     let stringSplit = string.split("");
